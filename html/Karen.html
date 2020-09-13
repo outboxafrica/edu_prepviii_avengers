@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karen Olive</title>
+    <link rel="stylesheet" href="/edu_prepviii_avengers/css/Karen.css">
+    <script src="https://kit.fontawesome.com/69d30456e9.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+        <nav id="navbar">
+            
+            <ul id="myLinks" class="nav-links">
+                <li><a href="#welcome-section" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#profile-link">Contact</a></li>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+            </ul>
+            <a href="javascript:void(0);" class="toggle" onclick="myFunction()"><i class="fas fa-bars fa-3x"></i></a>
+
+        </nav>
+
+
+
+    
+
+        <div id="welcome-section" name="welcome">
+            <h1 class="centered">HEY!!!<br>
+                 Am Karen Olive</h1>
+            <p class="centered">A Web Developer</p>
+        </div>
+        
+    
+  
+        <div id="About" name="About">
+            <figure>
+                <img id="profile" src="/edu_prepviii_avengers/images/Karen.jpg" alt="profile">
+                <figcaption>
+                    Currently a software engineering student.
+                </figcaption>
+            </figure>
+            
+            <div class="languages">
+                <p>Familiar with:</p>
+                <i class="fab fa-html5 fa-5x"></i>
+                <i class="fab fa-css3-alt fa-5x"></i>
+                <i class="fab fa-js-square fa-5x"></i>
+            </div>
+        </div>
+
+        <h2 id="projects" class="projects">Things I've Done</h2>
+        <div class="project-tile">
+            
+                <div id="calc" class="card">
+                    <a href="https://unruffled-hopper-17d715.netlify.app/">
+                        <img class="project-image" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png" 
+                        alt="Avatar">
+                    </a>
+                    <div class="container">
+                      <h4><b>JavaScript Calculator</b></h4>
+                    </div>
+                </div>
+
+                <div id="weather" class="card">
+                    <a href="https://weather-pwa-13.firebaseapp.com/">
+                        <img class="project-image" src="/edu_prepviii_avengers/images/karen-weather-app-icon.png" 
+                        alt="Avatar">
+                    </a>
+                    <div class="container">
+                      <h4><b>JavaScript Weather App</b></h4>
+                    </div>
+                </div>
+         
+        </div>
+
+
+ 
+
+
+        <h2 class="social">Connect With Me</h2>
+        <div name="profile-link" id="profile-link">
+            <a href="https://twitter.com/KarenLiv3"> <i class="fab fa-twitter fa-2x" class="icons"></i></a>
+            <a href="https://www.facebook.com/karen.olivia.399"><i class="fab fa-facebook fa-2x" class="icons"></i></a>
+            <a href="https://github.com/Karenolivia13"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.freecodecamp.org/karen-olive"><i class="fab fa-free-code-camp fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/karen-olive-abc13"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+              x.addEventListener('click', () =>{
+                    x.style.display = "none";
+                });
+                
+                
+            }
+        </script>
+</body>
+</html>
