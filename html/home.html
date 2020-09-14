@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/home.css" />
+    <script src="https://kit.fontawesome.com/69d30456e9.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <nav>
@@ -75,6 +77,55 @@
     </section>
     <section class="container2" id="contact">
       <h1>Contact section</h1>
+      <!-- <section id="contact-info" name="contact-info"> -->
+        <div class="flex-container">
+            <div id="address-info">
+                <h2>Contact Info</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae repudiandae esse culpa sunt 
+                    inventore velit dolores architecto fuga deleniti! 
+                    Delectus nisi mollitia veritatis sequi voluptas eaque temporibus adipisci labore.
+                    <address style="font-family: monospace;">
+                        <h3>Address </h3>
+                        Street: 71  Pier Road,<br>
+                        City:  STATHERN   <br>     
+                        Zip Code: LE14 5DD <br>
+                        Phone Number: 078 4398 5527<br>
+                        <a href="#">Temporary mail</a> info@domain.com
+                    </address>
+                </p>
+            </div>
+            <div id="form-input">
+                <form>
+                    
+                        <h2>Have a question or want to work together?</h2>
+                        <label for="name">Name</label><br>
+                        <input type="text" placeholder="Name" maxlength="30" required>
+                        <br>
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Email" required>
+                        <br>
+                        <label for="textarea" style="display: flex; flex-direction: row; align-items: center"> Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <br>
+                        <button type="reset" class="btn">Send Message</button>
+                
+                </form>
+            </div>
+        </div>
     </section>
+    
+    <section class="social-links">
+        <h3>Connect with us</h3>
+        
+        <div id="icons">
+           <a href="https://twitter.com"> <i class="fab fa-twitter fa-2x" class="icons"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x" class="icons"></i></a>
+            <a href="mailto:info@domain.com"><i class="far fa-envelope fa-2x" class="icons"></i></a>
+            <a href="0771234567"><i class="fas fa-phone fa-2x" class="icons"></i></a>
+        </div>
+        <footer> &#169 Copyright 2020</footer>
+    </section>
+    
   </body>
 </html>
