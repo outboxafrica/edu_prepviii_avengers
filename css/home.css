@@ -168,6 +168,12 @@ nav h1{
     transform: scale(1.1);
 }
 
+.container2 h1{
+    margin: 75px;
+    padding: 0;
+    text-align: center;
+}
+
 
 
 /* Animations for the landing page */
