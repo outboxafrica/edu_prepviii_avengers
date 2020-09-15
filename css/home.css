@@ -469,8 +469,8 @@ footer{
 }
 .service-type{
     
-    height: 550px;
-    width: 450px;
+    height: 500px;
+    width: 300px;
     border: 2px solid;
     border-radius: 0 0 1rem 1rem;
     margin-left: 2rem;
@@ -489,7 +489,7 @@ footer{
     font-size: 1.5rem;
 }
 .images{
-    width: 450px;
+    width: 300px;
 }
 #image3{
     height: 200px;
