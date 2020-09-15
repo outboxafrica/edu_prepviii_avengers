@@ -449,15 +449,13 @@ footer{
 /* services design */
 
 .services-container{
-    /* display: flex; */
-    align-content: center;
     margin-right: 0 10rem 10rem 10rem;
 
     
 }
 .services-title{
     text-align: center;
-    padding: 5rem 5rem 5rem 0;
+    padding: 10rem 0 2rem 0;
     font-size: 3rem;
 }
 .services{
@@ -466,7 +464,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 0 10rem 10rem 10rem; */
+    margin: 0 10rem 10rem 10rem;
 
 }
 .service-type{
