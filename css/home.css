@@ -117,7 +117,7 @@ nav h1{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(53,82,66,.5), rgba(47,80,63,.6)), 
-        url(/images/scovia.jpg) center no-repeat;
+        url(../images/scovia.jpg) center no-repeat;
     background-size: cover;
     overflow: hidden;
     /* position: relative; */
