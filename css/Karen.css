@@ -5,8 +5,12 @@
 }
 
 body{
-    background-color:#3282b8;
+    /* background: linear-gradient(#32a3ee, #394989);  */
+    /* background-color:#3282b8;  */
     color: white;
+    background-color:#333;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -15,44 +19,51 @@ html {
 
 #welcome-section{
     height: 100vh;
-    padding: 20px;
-    
-    background: linear-gradient(#1b262c, #394989);
-
+    width:100%;
+    background:radial-gradient(#333,#000);
 }
 
 .centered{
     text-align: center;
     color: white;
     padding: 20px;
-    margin-top: 50px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    transform:translate ;
+    transform:translateY (-50%);
 }
 
 
 
 h1{
     text-transform: capitalize;
+    top:40%;
+    width:100%;
+	font-family: 'Courgette', cursive, sans-serif;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
 
 }
 
 #navbar{
     font-family: Verdana, Geneva, sans-serif;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    background-color:  rgb(43, 43, 146, 0.8);
-    width: 100%;
+   justify-content: space-around;
+    align-items: center; 
+    /* background-color:  rgb(43, 43, 146); */
+    background-color:#333;
     position: fixed;
-    color: antiquewhite;
+    width: 100%;
+
 
     
 }
 
 ul li{
-    color: antiquewhite;
+    color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-family: Verdana, Geneva, sans-serif;
@@ -72,7 +83,11 @@ ul li:hover{
 
 .nav-links {
     display: flex;
-    align-items: center;  
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+
+  
 }
 
 .toggle{
@@ -81,11 +96,11 @@ ul li:hover{
 
 a{
     text-decoration: none;  
-    color: antiquewhite;
+    color: white;
 
 }
 
-#About{
+#about{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,16 +110,17 @@ a{
     
 }
 
-#About > figure{
+#about > figure{
     flex-basis: 400px;
     padding: 20px;
     margin: 10px;
     font-size: 25px;
     font-family: cursive, sans-serif;
     text-transform: capitalize;
+    align-self: center;
 }
 
-#About > .languages{
+#about > .languages{
     flex-basis: 500px;
     padding: 10px;
     margin: 10px;
@@ -120,7 +136,7 @@ a{
 }
 
 .fa-css3-alt:before{
-    color: blue;
+       color: rgb(59, 59, 252);
 }
 
 .fa-js-square:before{
@@ -131,6 +147,7 @@ a{
 #profile{
     width: 300px;
     border-radius: 10px;
+    
     
 }
 
@@ -181,7 +198,7 @@ a{
 
   .project-image{
     border-radius: 5px 5px 0 0;
-    width: 300px;
+    width: 100%;
     
   }
 
@@ -192,15 +209,17 @@ a{
      text-align: center;
      text-transform: capitalize;
      margin: 20px;
-     color: black;
+     
 
  } 
 
  #profile-link{
      display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
      align-items: center;
-     justify-content: center;
-     padding: 20px;
+     justify-content: space-around;
+     padding: 10px;
      margin: 10px;
      
      
@@ -217,12 +236,105 @@ a{
  
 }
 
+.leaf{
+    /* position:absolute ; */
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+
 @media screen and (max-width: 700px) {
+    #welcome-section{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        background: center;
+        margin-bottom: 20px;
+    } 
+    
+
     #myLinks{ 
         display: none; 
     }
 
-  
+  h1{
+      margin-bottom: 30px;
+      position: static;
+
+
+  }
 
     ul li:hover{
         background-color:  rgb(43, 43, 146, 0.7);
@@ -249,6 +361,8 @@ a{
 
     #About {   
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         
     }
 
@@ -257,6 +371,12 @@ a{
         flex-wrap: wrap;
     }
 
+    #profile{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    
     #About > .languages{
         width: 100%;
         flex-wrap: wrap;
@@ -282,22 +402,19 @@ a{
     .project-image{
         border-radius: 5px 5px 0 0;
         width: 100%;
+        overflow: visible;
         
-        
+    
       }
     
-    #profile-links{
-        flex-direction: column;
+    #profile-link{
+        flex-direction: row;
+    
     }
 
     .fa-facebook, .fa-twitter, .fa-github, .fa-free-code-camp, .fa-linkedin-in{
-        display: flex;
-        flex-direction: column;
         margin-top: 10px;
         background-color: cornflowerblue;
     }
 
-    img{
-        width: 100%;
-    }
   }
