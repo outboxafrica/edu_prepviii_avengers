@@ -470,17 +470,19 @@ footer{
 .service-type{
     
     height: 500px;
-    width: 300px;
+    width: 239px;
     border: 2px solid;
     border-radius: 0 0 1rem 1rem;
     margin-left: 2rem;
+    position: relative;
 
 }
 
 .info{
     text-align: center;
-    margin: 2rem;
+    margin: 1rem;
     font-size: 1.5rem;
+    padding-top: 10rem;
 }
 
 .service{
@@ -489,7 +491,8 @@ footer{
     font-size: 1.5rem;
 }
 .images{
-    width: 300px;
+    width: 239px;
+    position: absolute;
 }
 #image3{
     height: 200px;
