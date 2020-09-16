@@ -121,11 +121,28 @@ nav h1{
     color: white;
     font-weight: 700;
     display: block;
-    padding: 0 1rem;
+    padding: 1rem;
     text-transform: uppercase;
 }
 #nav-bar li:hover{
     background-color: #555555;
+}
+.toggle-btn{
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    
+}
+.toggle-btn .line{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 /* Styling the main content of the page */
@@ -140,7 +157,6 @@ nav h1{
         url(../images/scovia.jpg) center no-repeat;
     background-size: cover;
     overflow: hidden;
-    /* position: relative; */
     color: white;
 }
 
@@ -186,7 +202,7 @@ nav h1{
 
 .container2 h1{
     text-align: center;
-    padding: 10rem 0rem 2rem 0;
+    padding: 4rem 0rem 2rem 0;
     font-size: 3rem;
     text-transform: uppercase;
 }
@@ -213,11 +229,18 @@ nav h1{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
+    .toggle-btn{
+        display: flex;
+    }
     nav{
+        
         flex-direction: column;
         align-items: flex-start; 
         width: 100%;
+    }
+    #nav-bar{
+        display: none;
     }
     #nav-bar{
         width: 100%;
@@ -229,8 +252,10 @@ nav h1{
     }
     #nav-bar li a{
         padding: .4rem 1rem;
-        
-        
+           
+    }
+    #nav-bar.active{
+        display: flex;
     }
     .banner{
         padding-top: 100px;
@@ -240,6 +265,7 @@ nav h1{
         font-size: 2.7rem;
         width: 100%;
     }
+    
     #home-section{
         width: 100%;
         height: 700px;
@@ -486,7 +512,7 @@ footer{
 }
 .services-title{
     text-align: center;
-    padding: 10rem 0rem 2rem 0;
+    padding: 4rem 0rem 2rem 0;
     font-size: 3rem;
 }
 .services{
