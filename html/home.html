@@ -17,6 +17,11 @@
   <body>
     <nav>
       <h1>Avengers</h1>
+      <a href="#" class="toggle-btn">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
       <ul id="nav-bar">
         <li><a href="#home-section">home</a></li>
         <li><a href="#about">team</a></li>
@@ -165,6 +170,14 @@
     </section>
     
   </body>
+  <script>
+    const toggleBtn = document.getElementsByClassName('toggle-btn')[0]
+    const navbar  = document.getElementById('nav-bar')
+
+    toggleBtn.addEventListener('click', () => {
+      navbar.classList.toggle('active')
+    })
+  </script>
 </html>
 
 
